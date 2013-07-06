@@ -1,10 +1,13 @@
 var express = require('express');
+var fs = require('fs');
 
 var app = express.createServer(express.logger());
 
-var buffer = new Buffer("Im a string!", "utf8"); 
-
-var string = buffer.toString('utf8');
+fs.readFile('index.html', function(err, data)
+{
+    if(err) throw err;
+    var string = data.toString('utf8');
+});
 
 app.get('/', function(request, response) {
   response.send(string);
