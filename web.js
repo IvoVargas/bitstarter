@@ -2,8 +2,12 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
+var buffer = new Buffer("Im a string!", "utf8"); 
+
+var string = buffer.toString('utf8');
+
 app.get('/', function(request, response) {
-  response.send('Hello World 2!');
+  response.send(string);
 });
 
 var port = process.env.PORT || 5000;
