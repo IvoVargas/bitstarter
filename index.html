@@ -14,91 +14,91 @@
 		<style type="text/css">
 
 		  /* Large desktop */
-		  @media (min-width: 980px) { 
-			body {
-			 padding-top: 60px;
-			}
-		   .linediv-l {
-			 border-right: 1px white solid;
-			}
-		   .linediv-r {
-			 border-left: 1px white solid;
-		   }
-		  }
+      @media (min-width: 980px) { 
+        body {
+         padding-top: 60px;
+        }
+       .linediv-l {
+         border-right: 1px white solid;
+        }
+       .linediv-r {
+         border-left: 1px white solid;
+       }
+      }
 
-		  /* Landscape phones and down */
-		  @media (max-width: 480px) { 
-		   .copy {
-			 padding: 2.5% 10%;
-		   }
-		   .linediv-l {
-			 border-bottom: 1px white solid;
-		   }
-		   .linediv-r {
-			 border-top: 1px white solid;
-		   }
-		  }
+      /* Landscape phones and down */
+      @media (max-width: 480px) { 
+       .copy {
+         padding: 2.5% 10%;
+       }
+       .linediv-l {
+         border-bottom: 1px white solid;
+       }
+       .linediv-r {
+         border-top: 1px white solid;
+       }
+      }
 
-		  /* All form factors */
+      /* All form factors */
 
-		  /* Main body and headings */
-		  body{
-			font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-		  }
-		  .heading, .subheading {
-			font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-			text-align: center;
-		  }
-		  p.lead {
-			padding-top: 1.5%;
-			font-size: 24px;
-			line-height: 30px;
-		  }
-		  p {
-			font-size: 18px;
-			line-height: 24px;
-		  }
+      /* Main body and headings */
+      body{
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      .heading, .subheading {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        text-align: center;
+      }
+      p.lead {
+        padding-top: 1.5%;
+        font-size: 24px;
+        line-height: 30px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 24px;
+      }
 
-		  /* Video pitch and Action */
-		  .pitch {
-			padding: 2.5% 0%;
-		  }
-		  .order {
-			padding: 2% 0%;
-		  }
-		  .actions {
-			background-color: #343434;
-			padding: 3% 0%;
-		  }
-		  .video, .thermometer, .order, .social, .statistics {
-			text-align: center;
-		  }
-		  .statistics h3, .statistics p {
-			color: white;
-		  }
+      /* Video pitch and Action */
+      .pitch {
+        padding: 2.5% 0%;
+      }
+      .order {
+        padding: 2% 0%;
+      }
+      .actions {
+        background-color: #343434;
+        padding: 3% 0%;
+      }
+      .video, .thermometer, .order, .social, .statistics {
+        text-align: center;
+      }
+      .statistics h3, .statistics p {
+        color: white;
+      }
 
-		  /* Marketing Copy and Footer */
-		  .copy {
-			padding-top: 2.5%;
-			padding-bottom: 2.5%;
-			text-align: justify;
-		  }
-		  .asset {
-			padding: 2.5% 0%;
-		  }
-		  .footer {
-			color: #cccccc;
-			text-align: center;
-		  }
-		  .footer p {
-			font-size: 11px;
-		  }
-		  .footer a {
-			color: #ccccff;
-		  }
+      /* Marketing Copy and Footer */
+      .copy {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        text-align: justify;
+      }
+      .asset {
+        padding: 2.5% 0%;
+      }
+      .footer {
+        color: #cccccc;
+        text-align: center;
+      }
+      .footer p {
+        font-size: 11px;
+      }
+      .footer a {
+        color: #ccccff;
+      }
 		</style>
-	  </head><script type="text/javascript">var new_nav = new function() {};var x;var old_navigator = window.navigator;for (x in navigator) {if (typeof navigator[x] == 'function') {eval("new_nav." + x + " = function() { return old_navigator." + x + "();};");} else {eval("new_nav." + x + " = navigator." + x + ";");}}new_nav.userAgent = "Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_2 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8H7 Safari/6533.18.5";new_nav.vendor = "Apple, Inc.";window.navigator = new_nav;</script>
-	  <body style="">
+	  </head>
+	  <body>
 
 		<!-- Mobile-friendly navbar adapted from example. -->
 		<!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
@@ -148,15 +148,16 @@
 
 			<!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
 			<div class="span5 actions">
-			  <div class="span8 offset2">
-				<div class="statistics">
-				  <div class="span4">
-					<!-- linediv-l and linediv-r give dividing lines that look
-					different in horizontal and vertical layouts, illustrating
-					media queries. -->
-					<div class="linediv-l">
-					<h3>1000</h3> <p>backers</p>
-					</div>
+			  <div class="row-fluid">
+				<div class="span8 offset2">
+					<div class="row-fluid statistics">
+						<div class="span4">
+							<!-- linediv-l and linediv-r give dividing lines that look
+							different in horizontal and vertical layouts, illustrating
+							media queries. -->
+						<div class="linediv-l">
+							<h3>1000</h3> <p>backers</p>
+						</div>
 				  </div>
 				  <div class="span4">
 					<div class="linediv-c">
@@ -170,6 +171,7 @@
 				  </div>
 				</div>
 			  </div>
+			  <div class="row-fluid">
 			  <div class="span10 offset1">
 				<!-- Bootstrap progress bar -->
 				<!-- http://twitter.github.io/bootstrap/components.html#progress -->
@@ -178,11 +180,15 @@
 				  <div class="bar bar-warning" style="width: 40%;"></div>
 				</div>
 			  </div>
+			  </div>
+			  <div class="row-fluid">
 			  <div class="span6 offset3 order">
 				<!-- Standard Bootstrap button. -->
 				<!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
 				<button class="btn btn-success btn-large">Preorder</button>
 			  </div>
+			  </div>
+			  <div class="row-fluid">
 			  <div class="span8 offset2 social">
 				<!-- Social buttons are not included in default Bootstrap. -->
 				<!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
@@ -191,6 +197,8 @@
 			  </div>
 			</div>
 		  </div>
+		</div>
+		</div>
 
 		  <!-- Beyond this part the marketing copy begins. -->
 		  <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
